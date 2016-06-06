@@ -52,6 +52,7 @@ RESULT=$?
 
 # source the deploy property file
 if [ -f "${DEPLOY_PROPERTY_FILE}" ]; then
+  echo "Reading deployment file $DEPLOY_PROPERTY_FILE"
   source "$DEPLOY_PROPERTY_FILE"
 fi
 
